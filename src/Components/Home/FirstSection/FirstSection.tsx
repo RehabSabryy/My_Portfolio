@@ -82,9 +82,9 @@ export default function FirstSection() {
       </div>
       </div>
       <div className="col-md-5">
-        <motion.div className="comp-img" variants={imageVariants} initial="initial" animate="animate">
-          <img src="./images/comp.png" alt="computer" className="w-100" />
-        </motion.div>
+        <div className="comp-img">
+          <motion.img src="./images/comp.png" alt="computer" className="w-100" variants={imageVariants} initial="initial" animate="animate" />
+        </div>
       </div>
     </div>
   );
