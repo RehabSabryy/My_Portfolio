@@ -55,55 +55,70 @@ export default function Projects() {
   ];
 
   return (
-    <div id="projects" className="container mt-5">
+    <div id="projects" className="container-fluid mt-5">
     <p className="h1 text-center mb-5">Latest Work</p>
-    <div id="projectCarousel" className="carousel slide" data-bs-ride="carousel">
-      
-      <div className="carousel-indicators">
-        {projects.map((_, index) => (
-          <button
-            key={index}
-            type="button"
-            data-bs-target="#projectCarousel"
-            data-bs-slide-to={index}
-            className={index === 0 ? "active" : ""}
-            aria-label={`Slide ${index + 1}`}
-          ></button>
-        ))}
-      </div>
-
-      <div className="carousel-inner">
-        {projects.map((project, index) => (
-          <div key={project.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-            <div className="row align-items-center project-slide">
-              <div className="col-md-6">
-                <div className="p-4">
-                  <h2 className="fw-bold">{project.title}</h2>
-                  <p>{project.description}</p>
-                  <button type="button" className="btn btn-outline-warning" onClick={() => window.open(project.link, "_blank")}>
-                    View Project
-                  </button>
+  
+    <div className="d-flex justify-content-center">
+      <div id="projectCarousel" className="carousel slide" data-bs-ride="carousel">
+  
+        <div className="carousel-indicators">
+          {projects.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              data-bs-target="#projectCarousel"
+              data-bs-slide-to={index}
+              className={index === 0 ? "active" : ""}
+              aria-label={`Slide ${index + 1}`}
+            ></button>
+          ))}
+        </div>
+  
+        <div className="carousel-inner w-75 inner-container">
+          {projects.map((project, index) => (
+            <div key={project.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+              <div className="row align-items-center project-slide">
+                
+                <div className="col-md-6">
+                  <div className="p-4">
+                    <h2 className="fw-bold">{project.title}</h2>
+                    <p>{project.description}</p>
+                    <button 
+                      type="button" 
+                      className="btn yellow-btn" 
+                      onClick={() => window.open(project.link, "_blank")}
+                    >
+                      View Project
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div className="col-md-6 d-flex justify-content-center align-items-center">
-                <img src={project.img} className="project-img" alt={project.title} />
+  
+                <div className="col-md-6 d-flex justify-content-center align-items-center">
+                  <img 
+                    src={project.img} 
+                    className="project-img img-fluid" 
+                    alt={project.title} 
+                  />
+                </div>
+                
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="d-flex justify-content-center mt-3">
-      <button className="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+          ))}
         </div>
+  
+        <div className="d-flex justify-content-center mt-3">
+          <button className="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+      </div>
     </div>
-    
   </div>
-);
-}
+  );
+};  

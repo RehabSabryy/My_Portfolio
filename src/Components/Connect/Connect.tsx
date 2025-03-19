@@ -9,7 +9,7 @@ export default function Connect() {
         📩 Email me at:{" "}
         <a
           href="mailto:rehab-sabry@outlook.com"
-          className="text-warning fw-bold"
+          className="secondary-color fw-bold"
         >
           rehab-sabry@outlook.com
         </a>

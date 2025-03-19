@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+            <li className="nav-item me-3">
               <Link 
                 to="about" 
                 smooth={true} 
@@ -32,7 +32,7 @@ export default function Navbar() {
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item me-5">
               <Link 
                 to="projects" 
                 smooth={true} 
@@ -48,7 +48,7 @@ export default function Navbar() {
                 to="contact" 
                 smooth={true} 
                 duration={500} 
-                className="btn btn-outline-warning"
+                className="btn yellow-btn"
                 onClick={() => setIsOpen(false)}
               >
                 Contact

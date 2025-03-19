@@ -1,16 +1,20 @@
 :root {
  --dark-mode : #1C1D25;
  --main-color : #dd2efc;
+ --secondary-color :#F9E555;
 }
 
 body {
     background-color: var(--dark-mode) !important;
     color: white !important;
-    /* overflow-x: hidden; */
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
 
 }
 .main-color {    
     color: var(--main-color) !important;
+}
+.secondary-color {
+    color: var(--secondary-color) !important;
 }
 a {
     color: white !important;
@@ -27,7 +31,14 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
+  .yellow-btn {
+    border: var(--secondary-color) 1px solid !important; 
+    color: var(--secondary-color) !important;
+  }
+  .yellow-btn:hover {
+    background-color: var(--secondary-color) !important; 
+    color: var(--dark-mode) !important;
+  }
   .comp-img img {
     position: relative;
     z-index: 2; 
@@ -39,7 +50,9 @@ a {
 .custom-icon-size {
     padding-top: 40px;
 }
-
+.code-font {
+  font-family: monospace !important;
+}
 .text-lightt {
     color : rgb(196, 212, 226) ;
 }
@@ -143,7 +156,7 @@ a {
     bottom: -3px;
     width: 0%;
     height: 2px;
-    background-color: #ffc107; 
+    background-color: var(--secondary-color); 
     transition: width 0.4s ease-in-out;
 
   }
@@ -158,7 +171,12 @@ a {
   .navbar-toggler-icon {
     filter: invert(1);
   }
-  
   .custom-icon-ts {
     padding-top: 23px;
+  }
+  .about-me {
+    cursor: pointer;
+  }
+  .inner-container {
+    justify-self: center;
   }
