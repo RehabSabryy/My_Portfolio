@@ -12,7 +12,7 @@ export default function Projects() {
       id: 2,
       title: "ResHub",
       description: "Advanced booking platform for co-working spaces, padel courts, event halls, and other facilities. Customizable permissions, enabling admins to define user roles and control access. Streamlined user experience with an intuitive and responsive UI",
-      img: "/images/res.png",
+      img: "/images/reshub.png",
       link :"https://res.sevensquare.net",
     },
     {
@@ -24,20 +24,27 @@ export default function Projects() {
     },
     {
       id : 4,
+      title : "KICKS",
+      description : "Kicks is a modern shoe e-commerce website built using React.js. It provides an intuitive shopping experience with a seamless UI, real-time data fetching, drag-and-drop product management, offline detection, and an admin dashboard with sales analytics.",
+      img : "/images/kicks.png",
+      link : "https://github.com/RehabSabryy/Kicks"
+    },
+    {
+      id : 5,
       title : "Nyla",
       description : "Nyla is an Egyptian accommodation booking system designed to simplify hotel and resort reservations across the country, Nyla is web development project using React, Html, CSS, Bootstrap, jQuery.", 
       img : "/images/Group.svg",
       link : "https://www.behance.net/gallery/195859495/Nyla-Egyptian-Hotel-Booking-System",
     } , 
     {
-      id : 5,
+      id : 6,
       title :"E-commerce" ,
       description : "e-commerce website implementing GraphQL functionality to manage categories, products, and attributes after inserting them into the database. This project utilizes native PHP, the Webonyx GraphQL library, MySQL database and React class component",
       img : "/images/e-commerce.jpg",
       link :"https://www.behance.net/gallery/199785685/E-commerce-Website"
     } ,
     {
-      id : 6,
+      id : 7,
       title : "Food Recipes" ,
       description : "Recipe website with functionalities for Browsing categorized recipes, searching recipes, saving favorites, contact us, user authentication using React, The meal DB API, Context, React Helmet ,React Router Dom." ,
       img : "/images/food.png",
@@ -45,7 +52,7 @@ export default function Projects() {
 
     } , 
     {
-      id : 7,
+      id : 8,
       title : "Movies App" ,
       description : "Movies website to show the trending movies, actors weekly, and to show all movies, TV shows using HTML, CSS, Bootstrap, JavaScript, React." ,
       link : "https://www.behance.net/gallery/201461127/TMDB-Movies",

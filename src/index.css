@@ -39,6 +39,10 @@ a {
     background-color: var(--secondary-color) !important; 
     color: var(--dark-mode) !important;
   }
+  .yellow-second-btn {
+    background-color: var(--secondary-color) !important;
+    color: var(--dark-mode) !important;
+  }
   .comp-img img {
     position: relative;
     z-index: 2; 

@@ -14,6 +14,11 @@ export default function Connect() {
           rehab-sabry@outlook.com
         </a>
       </p>
+      <div>
+        <button className="btn yellow-second-btn" onClick={() => window.open("https://drive.google.com/file/d/1IWAF5FYTGxqFyAq5jWg-WUaX5eoDHJRn/view?usp=sharing")}>
+          View CV 
+        </button>
+      </div>
     </div>
   );
 }
