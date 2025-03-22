@@ -45,8 +45,8 @@ export default function FirstSection() {
   };
 
   return (
-    <div className="container row d-flex justify-content-center align-items-center text-center">
-      <div className="col-md-7 code-font">
+    <div className="container d-flex flex-column-reverse flex-md-row justify-content-center align-items-center text-center">
+      <div className="col-12 col-md-7 code-font">
         <h1 className="fw-bold">
           <span className="text-lightt">01</span> <span>{"<"}</span>
           <span className="main-color">{typedLines[0]}</span>
@@ -81,7 +81,7 @@ export default function FirstSection() {
         </motion.div>
       </div>
       </div>
-      <div className="col-md-5">
+      <div className="col-12 col-md-5 d-flex justify-content-center">
         <div className="comp-img">
           <motion.img src="./images/comp.png" alt="computer" className="w-100" variants={imageVariants} initial="initial" animate="animate" />
         </div>
