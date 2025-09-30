@@ -5,10 +5,15 @@ export default function Skills() {
     { name: "HTML", icon: "fa-html5" },
     { name: "CSS", icon: "fa-css3-alt" },
     { name: "JavaScript", icon: "fa-js" },
-    { name: "React", icon: "fa-react" },
     { name: "Bootstrap", icon: "fa-bootstrap" },
     { name: "Tailwind", icon: "fa-css3-alt" },
+    { name: "React", icon: "fa-react" },
+    { name: "TypeScript", icon: "fa-js" },
+    { name: "Next" , src : "/images/nextjs.png"},
+    { name : "Pusher" , src : "/images/pusher.svg"},
     { name: "Angular", icon: "fa-angular" },
+    { name: "Git", icon: "fa-git-alt" },
+    {name : "IQVIA" , src : "/images/iqvia.png"}
   ];
 
   return (
@@ -57,7 +62,11 @@ export default function Skills() {
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
-              <i className={`fa-brands ${skill.icon} custom-icon`}></i>
+              {skill?.src ? (
+                <img src={skill.src} alt={skill.name} className="custom-icon h-[500px]" style={{maxHeight : "320px" , maxWidth : "160px"}} />
+              ) : (
+              <i className={`fa-brands ${skill.icon} custom-icon`}></i> 
+              )}
               <p className="mt-2">{skill.name}</p>
             </motion.div>
           ))}

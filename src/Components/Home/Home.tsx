@@ -1,4 +1,5 @@
 import Connect from "../Connect/Connect";
+import DetailedWork from "../DetailedWork/DetailedWork";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import About from "./About/About";
@@ -9,6 +10,7 @@ export default function Home() {
     <>
     <FirstSection />
     <About />
+    <DetailedWork />
     <Skills/>
     <Projects/> 
     <Connect/>
