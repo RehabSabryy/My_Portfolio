@@ -17,7 +17,7 @@ export default function Connect() {
           </p>
           <p>
             🔗 LinkedIn:{" "}
-            <a href="https://www.linkedin.com/in/rehab-sabry/" target="_blank" className="secondary-color fw-bold">
+            <a href="https://www.linkedin.com/in/rehab-sabry-08a864275/" target="_blank" className="secondary-color fw-bold">
               LinkedIn Profile
             </a>
           </p>

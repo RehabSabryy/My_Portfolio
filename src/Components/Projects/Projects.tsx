@@ -11,7 +11,7 @@ export default function Projects() {
     {
       id: 2,
       title: "MeduGate",
-      description: "Comprehensive gym management system designed for fitness centers, gyms, and sports clubs. Multi branch support with dashboards for gym admins & branch managers. Member check-in & attendance tracking for better user management. Membership & package management, allowing admins to create and assign subscription plans. Invoice & payment tracking to monitor financial transactions.",
+      description: "Comprehensive LMS learning system designed for doctors and healthcare professionals. Multi-course support with lesson modules, assignments, and quizzes for each topic. CPD certification upon successful course completion. Live streaming sessions with interactive chat and Q&A for real-time learning and engagement.",
       img: "/images/medugate.svg",
       link : "https://medugate.me"
     },
