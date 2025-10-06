@@ -4,7 +4,7 @@ export default function About() {
   return (
     <motion.div
       id="about"
-      className="container d-flex flex-column flex-md-row align-items-center pt-5 border-bottom mb-5"
+      className="container mobile-responsive d-flex flex-column flex-md-row align-items-center pt-5 border-bottom mb-5"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

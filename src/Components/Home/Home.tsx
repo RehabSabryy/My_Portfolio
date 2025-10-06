@@ -10,7 +10,9 @@ export default function Home() {
     <>
     <FirstSection />
     <About />
+    <div className="mobile-responsive">
     <DetailedWork />
+    </div>
     <Skills/>
     <Projects/> 
     <Connect/>

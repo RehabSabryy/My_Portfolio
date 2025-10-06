@@ -45,7 +45,7 @@ export default function FirstSection() {
   };
 
   return (
-    <div className="container d-flex flex-column-reverse flex-md-row justify-content-center align-items-center text-center">
+    <div className="container  d-flex flex-column-reverse flex-md-row justify-content-center align-items-center text-center">
       <div className="col-12 col-md-7 code-font">
         <h1 className="fw-bold">
           <span className="text-lightt">01</span> <span>{"<"}</span>

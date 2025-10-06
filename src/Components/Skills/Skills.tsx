@@ -17,7 +17,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="container border-bottom mb-5">
+    <div className="container border-bottom mb-5 " id="skills">
       <motion.p
         className="h1 text-center"
         initial={{ opacity: 0, y: -20 }}

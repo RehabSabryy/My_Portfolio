@@ -5,7 +5,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src="./images/website_logo.png" alt="logo" width="150" />
