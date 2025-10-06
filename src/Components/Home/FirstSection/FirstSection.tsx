@@ -81,7 +81,7 @@ export default function FirstSection() {
         </motion.div>
       </div>
       </div>
-      <div className="col-12 col-md-5 d-flex justify-content-center">
+      <div className="col-9 col-md-5 d-flex justify-content-center">
         <div className="comp-img">
           <motion.img src="./images/comp.png" alt="computer" className="w-100" variants={imageVariants} initial="initial" animate="animate" />
         </div>

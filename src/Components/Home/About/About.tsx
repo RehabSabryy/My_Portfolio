@@ -34,7 +34,7 @@ export default function About() {
           <div>
             <hr />
             <h3 className="fw-bold mb-4 main-color">Experience</h3>
-            <div className="d-flex gap-5">
+            <div className="d-flex flex-column flex-md-row gap-5">
               <div className="">
                 <h4 className="fw-semibold ">
                   Seven Square Company

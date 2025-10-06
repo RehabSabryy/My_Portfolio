@@ -23,7 +23,7 @@ export default function Connect() {
           </p>
           <p>
             💻 GitHub:{" "}
-            <a href="https://github.com/rehab-sabry" target="_blank" className="secondary-color fw-bold">
+            <a href="https://github.com/RehabSabryy" target="_blank" className="secondary-color fw-bold">
               GitHub Profile
             </a>
           </p>

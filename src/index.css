@@ -9,6 +9,19 @@ body {
   color: white !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+@media (max-width: 576px) {
+  body {
+    width: 100% !important;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #root {
+    box-sizing: border-box;
+    width: 80% !important;
+  }
+}
+
 .main-color {
   color: var(--main-color) !important;
 }
@@ -23,9 +36,8 @@ a {
 }
 .comp-img {
   position: relative;
-  background-image: url("./images/worn-dots.png");
+  background-image: url("/images/worn-dots.png");
   background-repeat: repeat-x;
-  /* background-size: contain; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,11 +198,30 @@ a {
 }
 
 .detailed-work-section {
-  height: 320px;
-  width: 380px;
+  height: 250px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px; 
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .detailed-work-section {
+    height: 200px;
+    max-width: 200px;
+    min-width: 150px;
+  }
+  
+  .detailed-work-text {
+    font-size: 1.2rem !important;
+  }
+  
+  .detailed-work-icon {
+    max-width: 50px;
+    height: auto;
+  }
 }
