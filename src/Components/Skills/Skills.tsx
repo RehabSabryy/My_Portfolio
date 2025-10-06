@@ -57,7 +57,7 @@ export default function Skills() {
           {skillIcons.map((skill) => (
             <motion.div
               key={skill.name}
-              className="text-center m-3"
+              className="text-center m-3 skill-width"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
               transition={{ type: "spring", stiffness: 200 }}

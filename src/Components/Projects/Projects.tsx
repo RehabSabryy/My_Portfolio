@@ -86,16 +86,15 @@ export default function Projects() {
             ></button>
           ))}
         </div>
-  
-        <div className="carousel-inner w-75 inner-container">
+         {/* make width 100% in mobile view */}
+        <div className="carousel-inner w-75   inner-container">
           {projects.map((project, index) => (
             <div key={project.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
               <div className="row align-items-center project-slide">
-                
                 <div className="col-md-6">
                   <div className="p-4">
                     <h2 className="fw-bold">{project.title}</h2>
-                    <p>{project.description}</p>
+                    <p className="">{project.description}</p>
                     <button 
                       type="button" 
                       className="btn yellow-btn" 

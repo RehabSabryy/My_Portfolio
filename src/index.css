@@ -9,7 +9,7 @@ body {
   color: white !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media (max-width: 576px) {
+@media (max-width: 650px) {
   body {
     width: 100% !important;
    display: flex;
@@ -196,6 +196,11 @@ a {
 .inner-container {
   justify-self: center;
 }
+@media screen and (max-width: 576px) {
+  .inner-container {
+    width: 100% !important;
+  }
+}
 
 .detailed-work-section {
   height: 250px;
@@ -224,4 +229,10 @@ a {
     max-width: 50px;
     height: auto;
   }
+}
+.carousel-indicators {
+  bottom: -30px !important;
+}
+.skill-width{
+  width: 150px !important;
 }
